@@ -7,7 +7,7 @@ const seats = document.querySelectorAll('.sit');
 for (let index = 0; index < seats.length; index++) {
   const seat = seats[index];
   // console.log(element);
-  seat.addEventListener('click', function(){
+  seat.addEventListener('click', () =>{
     const seatName = seat.innerText;
     const seatSelect = document.getElementById('seat-select');
     const p = document.createElement('p');
@@ -22,5 +22,6 @@ for (let index = 0; index < seats.length; index++) {
     document.getElementById('total-price').innerText = totalPrice;
     setBackgroundColor(seat);
   })
+  
 }
 
